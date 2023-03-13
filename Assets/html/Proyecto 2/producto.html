@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabla para ingreso de datos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-mRJLY0fKj0vA3lBFp8X9gf46tSPq3m2x/xZ1GmRbIz/qNNkaKvNrJzOKd8M9X9czqRL3Ll7dBJgZzJj7QT+Iw==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+      th {
+        background-color: #f2f2f2;
+        text-align: left;
+        padding: 10px;
+      }
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 20px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border: 1px solid black;
+}
+.mi-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.mi-checkbox:checked {
+  background-color: #38F03D;
+  border-color: black;
+}
+
+.mi-checkbox:focus {
+  box-shadow: 0 0 5px #38F03D;
+}
+.mi-checkbox label {
+  display: flex;
+  align-items: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th>Código:</th>
+          <td><input type="text" name="Código"></td>
+        </tr>
+        <tr>
+          <th>Descripción:</th>
+          <td><input type="text" name="Descripción"></td>
+        </tr>
+        <tr>
+          <th>Código de barras:</th>
+          <td><input type="text" name="Código de barras"></td>
+        </tr>
+        <tr>
+          <th>Precio Unitario:</th>
+          <td><input type="text" name="Precio Unitario"></td>
+        </tr>
+        <tr>
+          <th>Stock:</th>
+          <td><input type="text" name="Stock"></td>
+        </tr>
+        <tr>
+          <th>Proveedor:</th>
+          <td><input type="text" name="Proveedor"></td>
+        </tr>
+        <tr>
+          <th>Estado:</th>
+          <th><input type="checkbox" id="mi-checkbox" class="mi-checkbox">
+<label for="mi-checkbox">Activo</label></th>
+        </tr>
+        <tr>
+          <th>Clasificación:</th>
+          <td><div class="dropdown">
+            <button class="dropbtn">Seleccionar Clasificación</button>
+            <div class="dropdown-content">
+              <a href="#" style=" border-bottom: 1px solid black;">Clase 1</a>
+              <a href="#" style=" border-bottom: 1px solid black;"> Clase 2</a>
+              <a href="#">Clase 3</a>
+            </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Guardar">
+            <a href="index2.html" type="button" class="btn btn-danger">Cancelar</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
