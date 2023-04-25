@@ -27,7 +27,7 @@ footer {
 
 .bigimage {
     height:100vh;
-    background: url('/Assets/img/portfolio-banner2.jpg');
+    background: url('/repo1/Assets/img/portfolio-banner2.jpg');
     background-size: cover;
     position:relative;
 }
